@@ -1,5 +1,71 @@
-// Variables
-@import 'helper/variable';
+/*================================================================
+	
+	STYLESHEET INDEXING
+	|
+	|___Helper
+	|	|___Fonts
+	|	|___Variables
+	|	|___Global
+	|
+	|___Components
+	|	|___Inputs
+	|	|___Cards
+	|
+	|___Layout
+	|	|___Header
+	|	|___Footer
+	|
+	|___ Sections
+	|	|___ Hero
+	|	|___ About
+	|
+	|___ END STYLESHEET INDEXING
 
-// Global
+===================================================================*/
+
+
+/*----------------------------------
+  ~~~ Helper ~~~
+-----------------------------------*/
+
+/* Variables */
+@import 'helper/fonts';
+/* Variables */
+@import 'helper/variables';
+/* Global */
 @import 'helper/global';
+
+
+
+/*----------------------------------
+  ~~~ Components ~~~
+-----------------------------------*/
+
+/* Inputs */
+@import 'components/inputs';
+/* Cards */
+@import 'components/cards';
+
+
+
+/*----------------------------------
+	~~~ Layout ~~~
+-----------------------------------*/
+
+/* Header */
+@import 'layout/header';
+/* Footer */
+@import 'layout/footer';
+
+
+
+/*----------------------------------
+	~~~ Sections ~~~
+-----------------------------------*/
+
+
+
+
+/*----------------------------------
+	~~~ Pages ~~~
+----------------------------------- */
