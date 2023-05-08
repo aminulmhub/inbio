@@ -136,6 +136,9 @@ body a {
   color: #ff014f;
   font-size: 20px;
 }
+.template-header .template-navigation .template-menu .nav-menu .navbar-close:hover i, .template-header .template-navigation .template-menu .nav-menu .navbar-close:active i {
+  color: #fff;
+}
 .template-header .template-navigation .template-menu .nav-menu .main-menu ul {
   margin: 0;
   padding: 0;
