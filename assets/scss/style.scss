@@ -16,8 +16,8 @@
 	|	|___Footer
 	|
 	|___ Sections
-	|	|___ Hero
-	|	|___ About
+	|	|___Hero
+	|	|___Feature
 	|
 	|___ END STYLESHEET INDEXING
 
@@ -63,6 +63,10 @@
 	~~~ Sections ~~~
 -----------------------------------*/
 
+/* Hero */
+@import 'sections/hero';
+/* Feature */
+@import 'sections/feature';
 
 
 

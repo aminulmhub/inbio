@@ -89,4 +89,31 @@
             150,
         );
     });
+
+    //======= Aos Animate js
+    AOS.init({
+        // easing: 'linear',
+        duration: 1200
+    });
 })(window.jQuery);
+
+
+// Type Writer
+var app = document.getElementById('mySkill');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  .pauseFor(2000)
+  .typeString('Developer.')
+  .pauseFor(300)
+  .deleteChars(10)
+  .typeString('Professional Coder.')
+  .pauseFor(300)
+  .deleteChars(20)
+  .typeString('Designer.')
+  .pauseFor(1000)
+  .start();
