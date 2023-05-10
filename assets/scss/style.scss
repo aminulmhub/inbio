@@ -18,6 +18,8 @@
 	|___ Sections
 	|	|___Hero
 	|	|___Feature
+	|	|___Portfolio
+	|	|___Resume
 	|
 	|___ END STYLESHEET INDEXING
 
@@ -67,6 +69,10 @@
 @import 'sections/hero';
 /* Feature */
 @import 'sections/feature';
+/* Portfolio */
+@import 'sections/portfolio';
+/* Resume */
+@import 'sections/resume';
 
 
 
