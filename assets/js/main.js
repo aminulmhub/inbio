@@ -102,18 +102,40 @@
 var app = document.getElementById('mySkill');
 
 var typewriter = new Typewriter(app, {
-  loop: true,
-  delay: 75,
+    loop: true,
+    delay: 75,
 });
 
 typewriter
-  .pauseFor(2000)
-  .typeString('Developer.')
-  .pauseFor(300)
-  .deleteChars(10)
-  .typeString('Professional Coder.')
-  .pauseFor(300)
-  .deleteChars(20)
-  .typeString('Designer.')
-  .pauseFor(1000)
-  .start();
+    .pauseFor(2000)
+    .typeString('Developer.')
+    .pauseFor(300)
+    .deleteChars(10)
+    .typeString('Professional Coder.')
+    .pauseFor(300)
+    .deleteChars(20)
+    .typeString('Designer.')
+    .pauseFor(1000)
+    .start();
+
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.arrow-next',
+        prevEl: '.arrow-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});

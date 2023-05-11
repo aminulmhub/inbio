@@ -20,6 +20,7 @@
 	|	|___Feature
 	|	|___Portfolio
 	|	|___Resume
+	|	|___Clients
 	|
 	|___ END STYLESHEET INDEXING
 
@@ -804,6 +805,176 @@ body .section-title .title {
 }
 .resume .resume_tabs_content .tab_item .tab_item_inner .content .experience-list .resume-single-list:hover::before {
   opacity: 1;
+}
+
+/* Clients */
+.clients .swiper {
+  max-width: 1145px;
+  width: 1145px;
+  position: relative;
+}
+.clients .swiper .slider-arrow {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+.clients .swiper .slider-arrow .icon {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  color: #ff014f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.clients .swiper .slider-arrow .icon:first-child {
+  margin-right: 20px;
+}
+.clients .swiper .slider-arrow .icon:hover, .clients .swiper .slider-arrow .icon:active {
+  background: linear-gradient(145deg, #ff014f, #d11414);
+  color: #fff;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner {
+  display: flex;
+  justify-content: center;
+  margin: 0 25px;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-info {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  margin-right: 40px;
+  max-width: 395px;
+  min-width: 395px;
+  padding: 30px 30px 40px 30px;
+  border-radius: 10px;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-info .card-thumbnail {
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 27px;
+  display: flex;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-info .card-thumbnail img {
+  max-width: 100%;
+  height: auto;
+  transition: 0.4s;
+  display: inline-block !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-info .card-content .subtitle {
+  font-size: 12px;
+  color: #ff014f;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-info .card-content .title {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  line-height: 34px;
+  color: #1e2125;
+  font-weight: 700;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-info .card-content .designation {
+  color: #3c3e41;
+  font-size: 14px;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-description {
+  position: relative;
+  padding: 50px 40px 50px 40px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  margin-top: 115px;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-description::before {
+  content: "";
+  position: absolute;
+  width: 51px;
+  height: 5px;
+  background: #dce1e4;
+  left: -43px;
+  z-index: -1;
+  top: 66px;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-description::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  left: 0;
+  top: -130px;
+  background: transparent;
+  background-image: url(../images/icons/quote.png);
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-description .title-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-description .title-area .title-info .title {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #1e2125;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-description .title-area .title-info .date {
+  font-weight: 500;
+  font-size: 16px;
+  color: #3c3e41;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-description .title-area .rating {
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-description .title-area .rating i {
+  color: #ffab1a;
+  font-size: 14px;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-description .seperator {
+  position: relative;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-description .seperator::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #dce1e4;
+  top: 20px;
+}
+.clients .swiper .swiper-wrapper .swiper-slide .inner .card-description .description {
+  margin-top: 45px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.clients .swiper .swiper-pagination .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background: #878e99;
+}
+.clients .swiper .swiper-pagination .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 8px;
+}
+.clients .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background: #ff014f;
 }
 
 /*----------------------------------

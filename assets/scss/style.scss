@@ -20,6 +20,7 @@
 	|	|___Feature
 	|	|___Portfolio
 	|	|___Resume
+	|	|___Clients
 	|
 	|___ END STYLESHEET INDEXING
 
@@ -73,6 +74,8 @@
 @import 'sections/portfolio';
 /* Resume */
 @import 'sections/resume';
+/* Clients */
+@import 'sections/clients';
 
 
 
