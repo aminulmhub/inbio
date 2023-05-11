@@ -6,6 +6,7 @@
         cursor: pointer;
         transition: $transition;
 
+
         .inner {
             .icon {
                 margin-bottom: 28px;
@@ -30,36 +31,39 @@
                     }
                 }
 
-                .description{
+                .description {
                     font-size: 16px;
                     line-height: 28px;
                     margin-bottom: 22px;
                 }
 
-                .read-more-button{
+                .read-more-button {
                     color: $color_primary;
                     font-size: 32px;
                 }
             }
         }
 
-        &:hover, &:active{
+        &:hover,
+        &:active {
             background: $color_gradient_red_box;
             color: $color_white;
 
-            .inner{
-                .icon{
-                    svg{
+            .inner {
+                .icon {
+                    svg {
                         color: $color_white;
                     }
                 }
-                .content{
-                    .title{
-                        a{
+
+                .content {
+                    .title {
+                        a {
                             color: $color_white
                         }
                     }
-                    .read-more-button{
+
+                    .read-more-button {
                         color: $color_white;
                     }
                 }

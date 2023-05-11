@@ -10,6 +10,7 @@
 	|___Components
 	|	|___Inputs
 	|	|___Cards
+	|	|___Social_links
 	|
 	|___Layout
 	|	|___Header
@@ -21,6 +22,8 @@
 	|	|___Portfolio
 	|	|___Resume
 	|	|___Clients
+	|	|___Blog
+	|	|___Contact
 	|
 	|___ END STYLESHEET INDEXING
 
@@ -48,6 +51,8 @@
 @import 'components/inputs';
 /* Cards */
 @import 'components/cards';
+/* Social_links */
+@import 'components/social_links';
 
 
 
@@ -76,6 +81,10 @@
 @import 'sections/resume';
 /* Clients */
 @import 'sections/clients';
+/* Blog */
+@import 'sections/blog';
+/* Contact */
+@import 'sections/contact';
 
 
 

@@ -25,15 +25,17 @@
                 margin-bottom: 22px;
                 font-family: $font_montserrat;
 
-                .name, .Typewriter__cursor{
+                .name,
+                .Typewriter__cursor {
                     color: $color_primary;
                 }
-                .Typewriter__cursor{
+
+                .Typewriter__cursor {
                     font-weight: 400;
                 }
             }
 
-            .description{
+            .description {
                 font-size: 16px;
                 line-height: 30px;
                 color: $color_text;
@@ -42,46 +44,13 @@
                 opacity: 0.9;
             }
         }
-
-        .social-share-inner{
-            .title{
-                color: $color_dark;
-                font-weight: 500;
-                font-size: 14px;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                display: inline-block;
-                margin-bottom: 20px;
-            }
-
-            .social-share{
-                padding: 0;
-                list-style: none;
-
-                li{
-                    a{
-                        height: 60px;
-                        width: 60px;
-                        font-size: 22px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        color: $color_primary;
-                    }
-
-                    &:not(:last-child){
-                        margin-right: 15px;
-                    }
-                }
-            }
-        }
     }
 
-    .thumbnail{
+    .thumbnail {
         position: relative;
         z-index: 2;
 
-        &::before{
+        &::before {
             box-shadow: $shadow_1;
             position: absolute;
             z-index: -1;
@@ -97,7 +66,7 @@
             border-radius: 6px;
         }
 
-        .inner{
+        .inner {
             text-align: center;
         }
     }
