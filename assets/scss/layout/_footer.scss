@@ -1,0 +1,29 @@
+.footer{
+    .footer-area{
+        text-align: center;
+
+        .logo{
+            a{
+                img{
+
+                }
+            }
+        }
+
+        .description{
+            font-size: 17px;
+            color: $color_text;
+            font-family: $font_poppins;
+            margin-top: 30px;
+
+            a{
+                color: $color_text;
+                transition: $transition;
+
+                &:hover{
+                    color: $color_primary;
+                }
+            }
+        }
+    }
+}
