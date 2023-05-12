@@ -1,7 +1,5 @@
 .clients {
     .swiper {
-        // max-width: 1145px;
-        // width: 1145px;
         position: relative;
 
         .slider-arrow {
@@ -12,7 +10,7 @@
             align-items: center;
             z-index: 2;
 
-            .icon{
+            .icon {
                 background: $color_gradient_box;
                 box-shadow: $shadow_1;
                 width: 60px;
@@ -25,11 +23,12 @@
                 cursor: pointer;
                 transition: $transition;
 
-                &:first-child{
+                &:first-child {
                     margin-right: 20px;
                 }
 
-                &:hover, &:active{
+                &:hover,
+                &:active {
                     background: $color_gradient_red_box;
                     color: $color_white;
                 }
@@ -46,10 +45,7 @@
                     .card-info {
                         background: $color_gradient_box;
                         box-shadow: $shadow_1;
-                        margin-right: 40px;
-                        max-width: 395px;
-                        min-width: 395px;
-                        padding: 30px 30px 40px 30px;
+                        padding: 30px;
                         border-radius: 10px;
 
                         .card-thumbnail {
@@ -151,22 +147,28 @@
                             }
 
                             .rating {
-                                padding: 8px 16px;
+                                padding: 10px;
                                 border-radius: 6px;
                                 background: $color_gradient_box;
                                 box-shadow: $shadow_1;
+                                display: flex;
+                                flex-wrap: nowrap;
 
                                 i {
                                     color: $color_warning;
                                     font-size: 14px;
+
+                                    &:not(:last-child) {
+                                        margin-right: 4px;
+                                    }
                                 }
                             }
                         }
 
-                        .seperator{
+                        .seperator {
                             position: relative;
 
-                            &::after{
+                            &::after {
                                 content: "";
                                 position: absolute;
                                 width: 100%;
@@ -176,9 +178,9 @@
                             }
                         }
 
-                        .description{
+                        .description {
                             margin-top: 45px;
-                            font-size: 18px;
+                            font-size: 16px;
                             line-height: 30px;
                         }
                     }
@@ -186,21 +188,144 @@
             }
         }
 
-        .swiper-pagination{
-            .swiper-pagination-bullet{
+        .swiper-pagination {
+            .swiper-pagination-bullet {
                 height: 12px;
                 width: 12px;
                 background: $color_body;
 
-                &:not(:last-child){
+                &:not(:last-child) {
                     margin-right: 8px;
                 }
             }
 
-            .swiper-pagination-bullet-active{
+            .swiper-pagination-bullet-active {
                 background: $color_primary;
             }
         }
 
+    }
+
+
+    // RESPONSIVE
+    @media only screen and (max-width: 991px) {
+        .swiper {
+            .slider-arrow {
+                display: none;
+            }
+
+            .swiper-wrapper {
+                .swiper-slide {
+                    .inner {
+                        .card-description {
+                            margin-top: 6px;
+
+                            &::before,
+                            &::after {
+                                content: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .inner {
+                        .card-info {
+                            .card-thumbnail {
+                                max-width: 150px;
+                                margin-right: 25px;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .inner {
+                        .card-info {
+                            .card-thumbnail {
+                                max-width: 100px;
+                                margin-right: 25px;
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        .card-description {
+                            .title-area {
+                                .title-info {
+                                    .title {
+                                        font-size: 18px;
+                                    }
+
+                                    .date {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 575px) {
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .inner {
+                        .card-info {
+                            .card-thumbnail {
+                                max-width: 100%;
+                                margin-right: 0;
+                                margin-bottom: 20px;
+                            }
+                        }
+
+                        .card-description {
+                            .title-area {
+                                .rating {
+                                    i {
+                                        font-size: 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 479px) {
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .inner {
+                        .card-description {
+                            .title-area {
+                                display: block;
+
+                                .title-info {
+                                    margin-bottom: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
