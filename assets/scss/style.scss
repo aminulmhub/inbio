@@ -22,6 +22,8 @@
 	|	|___Portfolio
 	|	|___Resume
 	|	|___Clients
+	|	|___Popular_client
+	|	|___Pricing
 	|	|___Blog
 	|	|___Contact
 	|
@@ -81,6 +83,10 @@
 @import 'sections/resume';
 /* Clients */
 @import 'sections/clients';
+/* Popular_client */
+@import 'sections/popular_client';
+/* Pricing */
+@import 'sections/pricing';
 /* Blog */
 @import 'sections/blog';
 /* Contact */

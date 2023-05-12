@@ -52,6 +52,14 @@
             -ms-flex-pack: justify;
             justify-content: space-between;
 
+            .template-branding{
+                .template-logo{
+                    // img{
+                    //     max-width: 90%;
+                    // }
+                }
+            }
+
             // Nav Menu
             .nav-menu {
                 margin-left: auto;
@@ -95,7 +103,7 @@
                         li {
                             display: inline-block;
                             position: relative;
-                            margin: 15px;
+                            margin: 10px 14px;
 
                             &.sm-only {
                                 display: none;
@@ -110,6 +118,7 @@
                                 text-transform: uppercase;
                                 line-height: 1;
                                 font-weight: 600;
+                                margin: 5px 10px;
                             }
 
                             .mm-trigger {
@@ -125,6 +134,10 @@
                 -webkit-box-pack: end;
                 -ms-flex-pack: end;
                 justify-content: flex-end;
+
+                // .btn_cta{
+                //     padding: 15px 35px;
+                // }
 
                 ul {
                     li {
@@ -209,7 +222,7 @@
                         display: flex;
                         .template-logo {
                             img {
-                                height: calc(32px + 4vw);
+                                max-width: 90%;
                             }
                         }
                     }

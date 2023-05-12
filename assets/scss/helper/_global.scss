@@ -10,6 +10,11 @@ body {
         transition: $transition;
     }
 
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
     .section-gap {
         padding: 100px 0;
         position: relative;
@@ -47,6 +52,7 @@ body {
             color: $color_text;
             margin-top: 15px;
             margin-bottom: 0;
+            font-family: $font_montserrat;
         }
     }
 
