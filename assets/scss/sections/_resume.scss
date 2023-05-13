@@ -55,6 +55,7 @@
 
                     .maintitle {
                         font-size: 36px;
+                        font-family: $font_montserrat;
                         font-weight: 700;
                         line-height: 62px;
                         color: $color_dark;
@@ -248,5 +249,118 @@
             }
         }
     }
+
+
+    // RESPONSIVE
+    @media only screen and (max-width: 991px){
+        .resume_tabs{
+            .nav-item{
+                .nav-link{
+                    padding: 25px 7px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .resume_tabs_content{
+            .tab_item{
+                .tab_item_inner{
+                    .content{
+                        .maintitle{
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px){
+        .resume_tabs{
+            .nav-item{
+                .nav-link{
+                    font-size: 18px;
+                    padding: 18px 6px;
+                }
+            }
+        }
+
+        .resume_tabs_content{
+            .tab_item{
+                .tab_item_inner{
+                    .content{
+                        .maintitle{
+                            font-size: 24px;
+                        }
+
+                        .experience-list{
+                            padding-left: 27px;
+
+                            .resume-single-list{
+                                .inner{
+                                    .heading{
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 575px){
+        .resume_tabs_content{
+            .tab_item{
+                .tab_item_inner{
+                    .content{
+                        .experience-list{
+                            .resume-single-list{
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 479px){
+        .resume_tabs_content{
+            .tab_item{
+                .tab_item_inner{
+                    .content{
+                        .experience-list{
+                            padding-left: 14px;
+
+                            .resume-single-list{
+                                padding: 20px;
+
+                                .inner{
+                                    &::before{
+                                        width: 20px;
+                                    }
+
+                                    &::after{
+                                        right: 102%;
+                                    }
+
+                                    .heading{
+                                        .title{
+                                            h4{
+                                                font-size: 21px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 
 }

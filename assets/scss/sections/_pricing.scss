@@ -152,10 +152,10 @@
                         }
                     }
 
-                    .pricing-footer{
+                    .pricing-footer {
                         text-align: center;
 
-                        a{
+                        a {
                             display: flex;
                             margin-bottom: 25px;
                             letter-spacing: 1px;
@@ -168,20 +168,21 @@
                             border: 0 none;
                         }
 
-                        .time-line{
+                        .time-line {
                             display: flex;
                             justify-content: center;
 
-                            .single-cmt{
+                            .single-cmt {
                                 display: flex;
                                 align-items: center;
-                                
-                                svg{
+
+                                svg {
                                     width: 14px;
                                     margin-right: 7px;
                                     color: $color_text;
                                 }
-                                span{
+
+                                span {
                                     font-size: 12px;
                                     font-weight: 500;
                                     color: $color_text;
@@ -189,7 +190,7 @@
                                     font-family: $font_montserrat;
                                 }
 
-                                &:not(:last-child){
+                                &:not(:last-child) {
                                     margin-right: 15px;
                                 }
                             }
@@ -199,4 +200,132 @@
             }
         }
     }
+
+
+    // RESPONSIVE
+    @media only screen and (max-width: 767px) {
+        .navigation-wrapper {
+            .tab-content {
+                .tab-pane {
+                    .pricing-wraper {
+                        .pricing-body {
+                            .check-wrapper {
+                                .check {
+                                    p {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 575px) {
+        .navigation-wrapper {
+            .tab-content {
+                .tab-pane {
+                    .pricing-wraper {
+                        .pricing-header {
+                            .header-left {
+                                .title {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+
+                        .pricing-body {
+                            .description {
+                                font-size: 16px;
+                                margin-bottom: 30px;
+                            }
+
+                            .check-wrapper {
+                                .check {
+                                    p {
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 479px) {
+        .navigation-wrapper {
+            .tab-content {
+                padding: 15px;
+
+                .tab-pane {
+                    .pricing-wraper {
+                        .pricing-header {
+                            display: block;
+                            margin-bottom: 25px;
+                            margin-top: 30px;
+
+                            .header-left {
+                                margin-bottom: 25px;
+
+                                .title {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+
+                        .pricing-body {
+                            .description {
+                                font-size: 16px;
+                                margin-bottom: 30px;
+                            }
+
+                            .check-wrapper {
+                                display: block;
+
+                                .check {
+                                    p {
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .pricing-footer{
+                            .time-line{
+                                display: block;
+
+                                .single-cmt{
+                                    &:not(:last-child){
+                                        margin-bottom: 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .nav{
+                display: block;
+    
+                .recommended{
+                    &::before{
+                        top: 5px;
+                        right: 5px;
+                    }
+
+                    .nav-link{
+                        &::after{
+                            content: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

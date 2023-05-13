@@ -24,6 +24,7 @@
                 line-height: 44px;
                 color: $color_dark;
                 margin-bottom: 9px;
+                font-weight: 700;
             }
 
             span {
@@ -111,6 +112,24 @@
                     .text-area {
                         height: auto;
                     }
+                }
+            }
+        }
+    }
+
+
+    // RESPONSIVE 
+    @media only screen and (max-width: 991px){
+        .contact-form-wrapper{
+            margin-left: 0;
+        }
+    }
+
+    @media only screen and (max-width: 479px){
+        .contact-about-area{
+            .title-area{
+                .title{
+                    font-size: 20px;
                 }
             }
         }

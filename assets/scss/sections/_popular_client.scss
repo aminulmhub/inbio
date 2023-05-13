@@ -112,4 +112,33 @@
             }
         }
     }
+
+
+    // RESPONSIVE
+    @media only screen and (max-width: 1199px) {
+        .clients-wrapper{
+            .tab-navigation-button{
+                .nav-item{
+                    .nav-link{
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 479px) {
+        .tab-area {
+            .tab-content {
+                .tab-pane {
+                    .client-card {
+                        .main-content {
+                            flex-basis: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
