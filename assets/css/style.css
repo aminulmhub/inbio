@@ -1211,6 +1211,9 @@ body .section-title .title {
   }
 }
 @media only screen and (max-width: 479px) {
+  .clients .swiper .swiper-wrapper .swiper-slide .inner .card-description {
+    padding: 20px;
+  }
   .clients .swiper .swiper-wrapper .swiper-slide .inner .card-description .title-area {
     display: block;
   }
