@@ -1220,6 +1220,9 @@ body .section-title .title {
   .clients .swiper .swiper-wrapper .swiper-slide .inner .card-description .title-area .title-info {
     margin-bottom: 25px;
   }
+  .clients .swiper .swiper-wrapper .swiper-slide .inner .card-description .title-area .rating {
+    display: inline-block;
+  }
 }
 
 /* Popular_client */
