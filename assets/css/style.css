@@ -503,6 +503,7 @@ body .section-title .title {
   color: #3c3e41;
   font-family: "Poppins", sans-serif;
   margin-top: 30px;
+  margin-bottom: 0;
 }
 .footer .footer-area .description a {
   color: #3c3e41;
@@ -1218,6 +1219,9 @@ body .section-title .title {
   }
 }
 @media only screen and (max-width: 479px) {
+  .clients .swiper .swiper-wrapper .swiper-slide .inner .card-info {
+    padding: 20px;
+  }
   .clients .swiper .swiper-wrapper .swiper-slide .inner .card-description {
     padding: 20px;
   }
@@ -1314,7 +1318,7 @@ body .section-title .title {
   z-index: -1;
 }
 .popular-client .tab-area .tab-content .tab-pane .client-card .main-content .inner .client-name {
-  padding: 16px;
+  padding: 20px;
 }
 .popular-client .tab-area .tab-content .tab-pane .client-card .main-content .inner .client-name a {
   color: #3c3e41;
@@ -1331,6 +1335,9 @@ body .section-title .title {
 @media only screen and (max-width: 479px) {
   .popular-client .tab-area .tab-content .tab-pane .client-card .main-content {
     flex-basis: 100%;
+  }
+  .popular-client .tab-area .tab-content .tab-pane .client-card .main-content .inner .thumbnail {
+    padding: 20px;
   }
 }
 
@@ -1752,8 +1759,14 @@ body .section-title .title {
   }
 }
 @media only screen and (max-width: 479px) {
+  .contact .contact-about-area {
+    padding: 20px;
+  }
   .contact .contact-about-area .title-area .title {
     font-size: 20px;
+  }
+  .contact .contact-form-wrapper {
+    padding: 20px;
   }
 }
 

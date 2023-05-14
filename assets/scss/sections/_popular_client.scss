@@ -95,7 +95,7 @@
                             }
 
                             .client-name {
-                                padding: 16px;
+                                padding: 20px;
 
                                 a {
                                     color: $color_text;
@@ -134,6 +134,12 @@
                     .client-card {
                         .main-content {
                             flex-basis: 100%;
+
+                            .inner{
+                                .thumbnail{
+                                    padding: 20px;
+                                }
+                            }
                         }
                     }
                 }
