@@ -43,6 +43,7 @@ body {
   color: #3c3e41;
   font-size: 16px;
   font-weight: 400;
+  overflow-x: hidden;
 }
 body a {
   text-decoration: none;
@@ -52,10 +53,16 @@ body img {
   max-width: 100%;
   height: auto;
 }
+body main {
+  overflow-x: hidden;
+}
+body main section {
+  overflow-x: hidden;
+}
 body .back-to-top {
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 20px;
   cursor: pointer;
   z-index: 2;
   width: 50px;

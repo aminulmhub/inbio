@@ -5,6 +5,8 @@ body {
     font-size: 16px;
     font-weight: 400;
 
+    overflow-x: hidden;
+
     a {
         text-decoration: none;
         transition: $transition;
@@ -15,10 +17,18 @@ body {
         height: auto;
     }
 
+    main{
+        overflow-x: hidden;
+
+        section{
+            overflow-x: hidden;
+        }
+    }
+
     .back-to-top {
         position: fixed;
         bottom: 30px;
-        right: 30px;
+        right: 20px;
         cursor: pointer;
         z-index: 2;
         width: 50px;
